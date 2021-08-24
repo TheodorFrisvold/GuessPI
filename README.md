@@ -9,12 +9,15 @@ Team 1 Modul 2 Teamprosjekt/Kundeprosjekt
 - Tidsbegrenset
 - Deathmatch
 - Statistikk (Alle brukere) 
-- Antall desimaler oppnådd
-- Tid brukt
-- Rekord
-- Dato/tid for rekord
-- Antall forsøk totalt
-- Individual user statistics
-- Progresjons-graf
+- - Antall desimaler oppnådd
+- - Tid brukt
+- - Rekord
+- - Dato/tid for rekord
+- - Antall forsøk totalt
+- - Individual user statistics
+- - Progresjons-graf
 - Funksjon viktigere enn utseende
 - !ROSA 
+
+
+[document](https://docs.google.com/document/d/1AhI6Ojl8Tt2QyvHXsoArk1bkfKFEekYeu7PsxQvg7ak)

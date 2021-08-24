@@ -23,7 +23,7 @@ model = {
         },
     },
     GameModes: {
-      mode: ['Practice', 'Normal']         //++ -- on <- ->  buttons
+        mode: ['Practice', 'Normal']         //++ -- on <- ->  buttons
     },
     statistics: {
         type: ['Top5', 'Graph'],
@@ -57,5 +57,4 @@ model = {
             }
         ]
     }
-
 };
