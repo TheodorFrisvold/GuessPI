@@ -10,7 +10,7 @@ model = {
     globals: {
         selectedPlayer: '',                    //populate with model.inputFields.main.playerName, manipulte with <- -> statspage
         grabGameMode() {
-            let arr = model.GameModes.mode
+            let arr = model.gameModes.mode
             arr.forEach(el => {
                 return console.log(el)
             });
@@ -22,7 +22,9 @@ model = {
             }
         },
     },
-    GameModes: {
+    gameInput: {
+    },
+    gameModes: {
         mode: ['Practice', 'Normal']         //++ -- on <- ->  buttons
     },
     statistics: {
@@ -30,26 +32,19 @@ model = {
     },
 
     data: {
+        leaderboard: { List: [] },
         players: [
             {
                 playerId: 1,
                 playerName: 'Adrian',
-                HighScores: {
-                    Normal: ['date', 'score'],
-                    Practice: ['date', 'score']
-                },
                 gamesPlayed: {
-                    Normal: [],
+                    Normal: [{ date: '12/08/21', score: 18 }, { date: '12/08/21', score: 17 },],             // top 5 er fem første i liste
                     Practice: []
-                }
+                },
             },
             {
                 playerId: 2,
                 playerName: 'Asbjorn',
-                HighScores: {
-                    Normal: ['date', 'score'],
-                    Practice: ['date', 'score']
-                },
                 gamesPlayed: {
                     Normal: [],
                     Practice: []
