@@ -8,19 +8,7 @@ model = {
     playerName: "", //onChange check if player exists then update selectedPlayer and generate player object in db
   },
   globals: {
-    selectedPlayer: "", //populate with model.inputFields.main.playerName, manipulate with <- -> statspage
-    grabGameMode() {
-      let arr = model.gameModes.mode;
-      arr.forEach((el) => {
-        return console.log(el);
-      });
-    },
-    grabPlayers() {
-      let index = model.data.players;
-      for (key in index) {
-        return console.log(index[key]);
-      }
-    },
+    selectedPlayer: "", //populate with model.inputFields.main.playerName, manipulate with <- -> stats-page
   },
   gameInput: {},
   gameModes: {
