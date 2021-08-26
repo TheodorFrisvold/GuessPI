@@ -2,6 +2,22 @@ function changePage(newPageName) {
   model.router.currentPage = newPageName;
   updateView();
 }
+function pageChange(get, set, val) {
+  let index = set.indexOf(get);
+  let tmp;
+  index == 0 && val == "-"
+    ? (tmp = set[set.length - 1])
+    : index == set.length - 1 && val == "+"
+    ? (tmp = set[0])
+    : val == "-"
+    ? ((index -= 1), (tmp = set[index]))
+    : val == "+"
+    ? ((index += 1), (tmp = set[index]))
+    : (tmp = set[val]);
+  model.router.currentPage = tmp;
+  updateView();
+  //return model.router.currentPage;
+}
 function mainView() {
   console.log("Main");
 }

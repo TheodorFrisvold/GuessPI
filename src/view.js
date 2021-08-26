@@ -10,9 +10,9 @@ function updateView() {
   eval(curPage);
 
   html = `
-<button onclick="changePage('game')">New Game</button>
-<button onclick="changePage('leaderboard')">Leaderboard</button>
-<button onclick="changePage('statistics')">Statistics</button>
+<button onclick="pageChange(model.router.currentPage, model.router.pages, 2)">New Game</button>
+<button onclick="pageChange(model.router.currentPage, model.router.pages, 3)">Leaderboard</button>
+<button onclick="pageChange(model.router.currentPage, model.router.pages, 4)">Statistics</button>
   `;
   app.innerHTML = html;
 }
