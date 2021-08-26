@@ -2,7 +2,8 @@
 
 model = {
   router: {
-    currentPage: "homePage",
+    currentPage: "main",
+    pages: ["main", "gameMode", "game", "leaderboard", "statistics"],
   },
   main: {
     playerName: "", //onChange check if player exists then update selectedPlayer and generate player object in db
@@ -17,7 +18,6 @@ model = {
   statistics: {
     type: ["Top5", "Graph"],
   },
-
   data: {
     leaderboard: { List: [] },
     players: [

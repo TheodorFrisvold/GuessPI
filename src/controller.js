@@ -1,3 +1,22 @@
+function changePage(newPageName) {
+  model.router.currentPage = newPageName;
+  updateView();
+}
+function mainView() {
+  console.log("Main");
+}
+function gameModeView() {
+  console.log("GameMode");
+}
+function gameView() {
+  console.log("Game");
+}
+function leaderboardView() {
+  console.log("Leaderboard");
+}
+function statisticsView() {
+  console.log("Statistics");
+}
 function grabGameMode() {
   let arr = model.gameModes.mode;
   arr.forEach((el) => {
