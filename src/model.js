@@ -1,6 +1,6 @@
 //Model
 
-model = {
+const model = {
   router: {
     currentPage: "main",
     pages: ["main", "gameMode", "game", "leaderboard", "statistics"],
@@ -43,3 +43,5 @@ model = {
     ],
   },
 };
+
+export default model;
