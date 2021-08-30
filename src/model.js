@@ -6,7 +6,7 @@ const model = {
     pages: ["main", "gameMode", "game", "leaderboard", "statistics"],
   },
   main: {
-    playerName: "", //onChange check if player exists then update selectedPlayer and generate player object in db
+    playerName: "fdgfdg", //onChange check if player exists then update selectedPlayer and generate player object in db
   },
   globals: {
     selectedPlayer: "", //populate with model.inputFields.main.playerName, manipulate with <- -> stats-page
@@ -19,29 +19,31 @@ const model = {
     type: ["Top5", "Graph"],
   },
   data: {
-    leaderboard: { List: [] },
+    // leaderboard: { List: [] },
+    gamesPlayed: [
+      { date: "12/08/21", score: 18, playerId: 1, gamemode: "Normal" },
+      { date: "12/08/21", score: 18, playerId: 2, gamemode: "Practice" },
+    ],
     players: [
       {
         playerId: 1,
         playerName: "Adrian",
-        gamesPlayed: {
-          Normal: [
-            { date: "12/08/21", score: 18 },
-            { date: "12/08/21", score: 17 },
-          ], // top 5 er fem første i liste
-          Practice: [],
-        },
+        // gamesPlayed: {
+        //   Normal: [
+        //     { date: "12/08/21", score: 18 },
+        //     { date: "12/08/21", score: 17 },
+        //   ], // top 5 er fem første i liste
+        //   Practice: [],
+        // },
       },
       {
         playerId: 2,
         playerName: "Asbjorn",
-        gamesPlayed: {
-          Normal: [],
-          Practice: [],
-        },
+        // gamesPlayed: {
+        //   Normal: [],
+        //   Practice: [],
+        // },
       },
     ],
   },
 };
-
-export default model;
